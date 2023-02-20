@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/Besttiny" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="main-heading">
+            etch a sketch
+        </h1>
+    </header>
+    <main>
+        <div class="grid-container">
+            <div class="grid"></div>
+        </div>
+        <button class="grid-options-button">grid options</button>
+    </main>
+    <div class="page-dimmer hide">
+        <div class="grid-options-window">
+            <section class="grid-options-window-section top">
+                <div class="menu-option-heading-container">
+                    <h1 class="menu-options-heading">grid options</h1>
+                </div>
+            </section>
+            <section class="grid-options-window-section bottom">
+                <div class="menu-option-container">
+                    <label for="grid-slider">grid size</label>
+                    <input class="grid-slider" type="range" id="grid-slider" name="grid-slider" min="1" max="64" value="16">
+                    <div class="grid-size">16 x 16</div>
+                </div>
+                <div class="menu-option-container">
+                    <label for="color-picker">color</label>
+                    <input class="color-picker" type="color" id="color-picker" name="color-picker" value="#ffffff">
+                </div>
+                
+                <div class="menu-option-container">
+                    <p class="clear-grid">clear grid</p>
+                </div>
+            </section>
+            <div class="save-button-container">
+            <button class="save-button">Save</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

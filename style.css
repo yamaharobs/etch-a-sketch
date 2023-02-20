@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: 'pricedown';
+    src: url(/webfonts/pricedown/pricedown\.ttf);
+}
+
+
+
+
+
+html {
+    font-size: 10px;
+    background-color: pink;
+
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-heading {
+    font-size: 10rem;
+    color: #f67db4;
+    color: black;
+    position: relative;
+    font-family: 'Besttiny', sans-serif;
+
+    text-shadow: 1px 1px 5px #f67db4;
+
+}
+
+
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+.controls-container {
+
+    display: flex;
+    display: none;
+    flex-direction: column;
+    width: 25%;
+
+
+}
+
+.grid {
+    display: grid;
+    height: 450px;
+    width: 450px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 1px solid #f67db4;
+    
+
+
+
+
+}
+
+
+
+
+.grid-item {
+    background-color: black;
+    display: inline-block;
+    
+
+}
+
+.grid-options-button {
+    width: auto;
+    border: none;
+    font-family: 'pricedown';
+    font-size: 3.5rem;
+    color: black;
+    text-shadow: 1px 1px 5px #f67db4;
+    background-color: transparent;
+}
+
+.grid-options-button:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.page-dimmer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    display: flex;
+    
+   
+
+
+}
+
+.grid-options-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    border-radius: 0 0 90px 0;
+    box-shadow: 1px 1px 4px black;
+    padding-left: 15px;
+}
+
+.grid-options-window-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top {
+    height: 30%;
+}
+.bottom {
+    height: 40%;
+}
+
+
+label {
+    color: #f67db4;
+    font-family: 'pricedown';
+    font-size: 2rem;
+    
+}
+
+input {
+    border: none;
+    margin-left: 15px;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+     appearance: none;
+     background: transparent;
+     cursor: pointer;
+     width: 13rem;
+     
+ }
+
+ input[type="range"]:focus {
+    outline: none;
+  }
+  
+
+
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    height: 0.5rem;
+    margin-top: -10px;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -8px;
+    background-color: #f67db4;
+    height: 2rem;
+    width: 1rem;
+       
+ }
+
+ input[type="range"]::-webkit-slider-thumb:hover {
+    filter: brightness(1.5);
+ }
+
+ .grid-size {
+    font-family: 'pricedown';
+    font-size: 1.85rem;
+    margin-left: 17px;
+    color: #f67db4;
+ }
+
+ 
+
+
+#shader {
+    accent-color: #f67db4;
+}
+
+.menu-options-heading {
+    font-family: 'pricedown';
+    font-size: 7rem;
+    color: #f67db4;
+   
+}
+
+.menu-option-heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.save-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.save-button {
+
+    width: fit-content;
+    font-size: 2.5rem;
+    font-family: 'pricedown';
+    background: transparent;
+    color: #f67db4;
+    border: none;
+    margin-left: -45px;
+}
+
+.save-button:hover, .clear-grid:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.clear-grid {
+    font-family: 'pricedown';
+    font-size: 2rem;
+    color: #f67db4;
+}
+
+.hide {
+    display: none;
+}
