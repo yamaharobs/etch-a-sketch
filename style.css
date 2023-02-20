@@ -101,7 +101,7 @@ header {
 .grid-options-button {
     width: auto;
     border: none;
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     font-size: 3.5rem;
     color: black;
     text-shadow: 1px 1px 5px #f67db4;
@@ -155,7 +155,7 @@ header {
 
 label {
     color: #f67db4;
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     font-size: 2rem;
     
 }
@@ -207,7 +207,7 @@ input[type="range"]::-webkit-slider-runnable-track {
  }
 
  .grid-size {
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     font-size: 1.85rem;
     margin-left: 17px;
     color: #f67db4;
@@ -221,7 +221,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .menu-options-heading {
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     font-size: 7rem;
     color: #f67db4;
    
@@ -241,7 +241,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
     width: fit-content;
     font-size: 2.5rem;
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     background: transparent;
     color: #f67db4;
     border: none;
@@ -254,7 +254,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 .clear-grid {
-    font-family: 'pricedown';
+    font-family: 'pricedown', sans-serif;
     font-size: 2rem;
     color: #f67db4;
 }
